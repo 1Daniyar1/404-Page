@@ -1,0 +1,49 @@
+body{
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    background-color: #C6F1E7;
+}
+
+#earth{
+    position: fixed;
+    top: 60vh;
+    width: 100vh;
+    left: 27%;
+    text-align: center;
+    animation: spin 60s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg); }
+}
+
+header{
+    font-size: 7rem;
+    font-weight: 400;
+    font-family: 'Berkshire Swash', cursive;
+    margin-top: 100px;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+#rocket{
+    position: absolute;
+    width: 40vh;
+    top: 30%;
+    left: 41%;
+    animation: fly 3s linear infinite;
+}
+
+@keyframes fly{
+    0%{ transform: translateY(0px) rotate(0.63turn);}
+    25%{transform: translateY(-10px) rotate(0.63turn);}
+    50%{transform: translateY(0px) rotate(0.63turn);}
+    75%{transform: translateY(10px) rotate(0.63turn);}
+    100%{transform: translateY(0px) rotate(0.63turn);}
+}
